@@ -208,10 +208,10 @@ html, body {
 }
 
 /* ── S2: IMPACT ── */
-.s2 { background: var(--l-bg); display: flex; }
+.s2 { background: var(--l-bg); display: flex; align-items: center; }
 
 .impact-inner {
-  max-width: 900px; width: 100%; margin: auto; padding: 80px var(--pad);
+  max-width: 900px; width: 100%; margin: 0 auto; padding: 80px var(--pad);
   display: grid; grid-template-columns: 1fr 1.05fr; gap: 52px; align-items: center;
 }
 
@@ -273,7 +273,7 @@ html, body {
   background-image:
     radial-gradient(ellipse at 84% 16%, rgba(0,117,152,0.11) 0%, transparent 52%),
     radial-gradient(ellipse at 6% 92%, rgba(125,211,252,0.16) 0%, transparent 48%);
-  display: flex;
+  display: flex; align-items: center; position: relative;
 }
 .s3-mark {
   position: absolute; left: clamp(-70px, -4vw, -40px); bottom: -50px;
@@ -281,7 +281,7 @@ html, body {
   opacity: 0.055; pointer-events: none; user-select: none; z-index: 0;
 }
 
-.pil-inner { max-width: var(--max); width: 100%; margin: auto; padding: 80px var(--pad); position: relative; z-index: 1; }
+.pil-inner { max-width: var(--max); width: 100%; margin: 0 auto; padding: 80px var(--pad); position: relative; z-index: 1; }
 
 .pil-head { max-width: 640px; margin-bottom: 40px; }
 .pil-title {

@@ -4,15 +4,27 @@ All changes are tracked with point revisions and timestamped archives for easy r
 
 ---
 
-## Current Version: 1.0
+## Current Version: 1.1
 
 | Version | Date | Time | Description | Archived File | Rollback |
 |---------|------|------|-------------|---------------|----------|
-| 1.0 | 2025-07-05 | 14:30 | Initial release: standalone landing page with typewriter hero, 4-screen deck, responsive design | — | N/A (initial) |
+| 1.1 | 2026-07-05 | 18:52 | Copy fix (whom by); Formspree lead capture; fixed screen 3 scroll and screen 2 header clipping on mobile/tablet | `260705-1852_pre-scroll-fix.html` | Copy archived file over index.html |
+| 1.0 | 2026-07-05 | 14:30 | Initial release: standalone landing page with typewriter hero, 4-screen deck, responsive design | — | N/A (initial) |
 
 ---
 
 ## Version History
+
+### 1.1 — Lead Capture + Mobile Scroll Fixes
+**Date:** 2026-07-05 18:52
+**Description:**
+- Changed Q3 copy: "who by" to "whom by"
+- Wired contact form to Formspree (submissions go to info@cadeom.com)
+- Fixed screen 3 (pillars) not scrolling on any device: a `position: relative` on `.s3` was overriding the `position: absolute` every slide needs to act as a scroll container
+- Fixed screen 2 header being clipped by the nav bar on iPad/landscape: replaced `align-items: center` vertical centering (which pushes overflowing content above the reachable scroll area) with overflow-safe `margin: auto` centering on `.impact-inner` and `.pil-inner`
+
+**Files Changed:** `index.html`
+**Archived:** `archived/260705-1852_pre-scroll-fix.html`
 
 ### 1.0 — Initial Release
 **Date:** 2025-07-05 14:30  
